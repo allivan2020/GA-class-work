@@ -28,9 +28,50 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* ------------header--------------------- */
+.header {
+  padding: 28px 0;
+  margin-left: 32px;
+  margin-right: 32px;
+}
 .header-list-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+/* --------------hero-------------------- */
+.hero {
+  height: 600px;
+  width: 1200px;
+  background-color: #3c4fb981;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 72px;
+}
+.hero-title {
+  font-weight: 600;
+  font-size: 28px;
+  width: 482px;
+  margin-bottom: 32px;
+  margin-left: 40px;
+}
+.hero-box {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 40px;
+  margin-left: 40px;
 }
