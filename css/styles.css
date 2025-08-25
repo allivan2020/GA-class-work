@@ -152,6 +152,8 @@ img {
   color: rgba(255, 255, 255, 0.7);
 }
 /* --------------PRODUCTS-------------------- */
+.products {
+}
 .products-title {
   font-weight: 600;
   font-size: 24px;
@@ -183,42 +185,135 @@ img {
 }
 .products-item-text {
 }
-/* --------------HOW ITS MADE-------------------- */
+/* --------------STEPS-------------------- */
 .steps {
 }
+.steps-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+}
+.steps-span {
+  color: var(--orange);
+}
+
 .steps-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--black);
 }
 .steps-list {
 }
 .steps-item {
 }
+.review-card-title {
+}
 .steps-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  color: var(--black);
 }
 /* --------------REVIES-------------------- */
 .reviews {
+}
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+}
+.reviews-span {
+  color: var(--orange);
 }
 .reviews-list {
 }
 .reviews-item {
 }
-.review-title {
+.reviews-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: var(--black);
 }
-.review-text {
+.reviews-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
 }
-.review-btn {
+.reviews-btn {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--black);
+  border: 1px solid var(--orange);
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+}
+.reviews-btn:hover,
+.reviews-btn:focus {
+  background-color: var(--orange);
+  color: var(--white);
 }
 /* --------------FOOTER-------------------- */
 .footer {
+  background-color: #3f3b3b;
 }
 .footer-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.footer-span {
+  color: var(--orange);
 }
 .footer-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: var(--white);
+}
+.footer-address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--white);
+}
+.footer-address-link:hover,
+.footer-address-link:focus {
+  color: var(--orange);
 }
 .footer-nav {
 }
 .footer-list {
 }
-/* --------------hero-------------------- */
-
-/* --------------hero-------------------- */
-/* --------------hero-------------------- */
+.footer-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--white);
+}
+.footer-item:hover,
+.footer-item:focus {
+  color: var(--orange);
+}
