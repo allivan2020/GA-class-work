@@ -5,10 +5,23 @@
   --white: #fff;
   --hover: #fcf1e0;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-body {
-  font-family: "Montserrat", sans-serif;
-  color: var(--black);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .container {
   max-width: 1166px;
@@ -17,6 +30,20 @@ body {
   padding-right: 15px;
   outline: 2px solid red;
 }
+.btn {
+  min-width: 146px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid transparent;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--black);
+}
+
 a {
   text-decoration: none;
   color: currentColor;
@@ -42,36 +69,16 @@ img {
   max-width: 100%;
   height: auto;
 }
-.btn {
-  min-width: 146px;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  border-radius: 100px;
-  border: 1px solid transparent;
-}
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 /* ------------header--------------------- */
 .header {
 }
 .header-nav {
+  margin-bottom: 0;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0;
 }
 .header .container {
   margin-bottom: 0;
@@ -90,13 +97,14 @@ img {
 }
 
 .header-item {
+  padding-top: 28px;
+  padding-bottom: 28px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: var(--black);
-  padding-top: 28px;
-  padding-bottom: 28px;
 }
 .header-item:hover,
 .header-item:focus {
@@ -105,28 +113,35 @@ img {
 /* --------------hero-------------------- */
 
 .hero {
-  background-color: var(--violet);
   padding-top: 380px;
   padding-bottom: 40px;
   margin-bottom: 72px;
+
+  background-color: var(--violet);
 }
 .hero-title {
+  max-width: 484px;
+  margin-bottom: 32px;
+
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: var(--white);
-  max-width: 484px;
-  margin-bottom: 32px;
 }
 .hero-box {
+  display: flex;
 }
+
 .hero .btn {
+  padding: 14px 40px;
+  margin-bottom: 0;
+  margin-right: 20px;
+
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
   background-color: var(--orange);
-  padding: 14px 40px;
 }
 .hero .btn:hover,
 .hero .btn:focus {
@@ -134,14 +149,19 @@ img {
   background-color: var(--hover);
 }
 .hero-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .hero-link-border {
+  padding: 14px 40px;
+
   font-weight: 600;
   font-size: 14px;
   color: var(--white);
   border: 1px solid var(--white);
   border-radius: 100px;
-  padding: 14px 40px;
 }
 .hero-link-border:hover,
 .hero-link-border:focus {
@@ -159,9 +179,10 @@ img {
 }
 /* --------------ADVANTEGES-------------------- */
 .advantages {
+  padding-bottom: 51px;
+
   background-color: var(--violet);
   padding-top: 50px;
-  padding-bottom: 51px;
 }
 .advantages .container {
   margin-bottom: 0;
@@ -174,10 +195,11 @@ img {
   max-width: 308px;
 }
 .advantages-title {
+  margin-bottom: 18px;
+
   font-weight: 600;
   font-size: 18px;
   color: var(--white);
-  margin-bottom: 18px;
 }
 .advantages-text {
   font-weight: 400;
@@ -191,6 +213,10 @@ img {
   padding-bottom: 50px;
 }
 .products-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
@@ -199,25 +225,31 @@ img {
   text-align: center;
   color: var(--black);
   max-width: 411px;
-  margin: 0 auto 28px;
 }
 .produts-span {
   color: var(--orange);
 }
 .products-text {
+  max-width: 486px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--black);
-  max-width: 486px;
-  margin: 0 auto 50px;
 }
 .products-list {
   display: flex;
   justify-content: space-between;
 }
 .products-item {
+  padding: 32px;
+  padding-bottom: 28px;
+  padding-top: 28px;
+
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28;
@@ -227,9 +259,6 @@ img {
   border: 1px solid var(--black);
   border-radius: 15px;
   align-items: flex-start;
-  padding: 32px;
-  padding-bottom: 28px;
-  padding-top: 28px;
 }
 .products-item-img {
   margin-bottom: 36px;
@@ -259,17 +288,19 @@ img {
 }
 
 .steps-subtitle {
+  margin-bottom: 28px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: var(--black);
   text-align: right;
-  margin-bottom: 28px;
 }
 .steps-list {
-  list-style: disc;
   max-width: 452px;
   padding-right: 27px;
+
+  list-style: disc;
 }
 .steps-item {
   margin-bottom: 24px;
@@ -290,6 +321,8 @@ img {
   text-align: center;
 }
 .reviews-title {
+  margin-bottom: 50px;
+
   font-weight: 600;
   font-size: 24px;
   line-height: 1.16;
@@ -297,7 +330,6 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
-  margin-bottom: 50px;
 }
 .reviews-span {
   color: var(--orange);
@@ -305,11 +337,8 @@ img {
 .reviews-list {
   display: flex;
   gap: 28px;
-  align-items: center;
   margin-bottom: 49px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-basis: calc((100% - 56px) / 3);
 }
 .reviews-item-img {
   margin-bottom: 18px;
@@ -319,29 +348,32 @@ img {
   border: 1px solid var(--black);
 }
 .reviews-card-title {
+  margin-bottom: 24px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   text-align: center;
   color: var(--black);
-  margin-bottom: 24px;
 }
 .reviews-text {
+  margin-bottom: 24px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
-  margin-bottom: 24px;
 }
 .reviews .btn {
+  padding: 14px 40px;
+
   font-weight: 600;
   font-size: 18px;
   color: var(--black);
   border: 1px solid var(--orange);
   border-radius: 100px;
-  padding: 14px 40px;
 }
 .reviews .btn:hover,
 .reviews .btn:focus {
@@ -350,9 +382,10 @@ img {
 }
 /* --------------FOOTER-------------------- */
 .footer {
-  background-color: #3f3b3b;
   padding-top: 50px;
   padding-bottom: 86px;
+
+  background-color: #3f3b3b;
 }
 .footer .container {
   margin-bottom: 0;
