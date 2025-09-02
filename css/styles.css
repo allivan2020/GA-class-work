@@ -28,7 +28,7 @@
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 .btn {
   min-width: 146px;
@@ -131,6 +131,7 @@ img {
 }
 .hero-box {
   display: flex;
+  align-items: center;
 }
 
 .hero .btn {
@@ -147,11 +148,6 @@ img {
 .hero .btn:focus {
   color: var(--orange);
   background-color: var(--hover);
-}
-.hero-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .hero-link-border {
@@ -171,6 +167,8 @@ img {
   background-color: var(--white);
 }
 .hero-link-scroll {
+  margin-left: auto;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
@@ -271,6 +269,16 @@ img {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.steps-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.reviews-wrap {
+  text-align: start;
+  margin-right: 20px;
+}
+
 .steps-title {
   font-weight: 600;
   font-size: 24px;
@@ -289,24 +297,23 @@ img {
 
 .steps-subtitle {
   margin-bottom: 28px;
+  max-width: 350px;
 
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
   color: var(--black);
-  text-align: right;
+  text-align: start;
 }
 .steps-list {
   max-width: 452px;
-  padding-right: 27px;
 
   list-style: disc;
 }
 .steps-item {
   margin-bottom: 24px;
 }
-.review-card-title {
-}
+
 .steps-text {
   font-weight: 400;
   font-size: 14px;
@@ -338,7 +345,7 @@ img {
   display: flex;
   gap: 28px;
   margin-bottom: 49px;
-  flex-basis: calc((100% - 56px) / 3);
+  flex-wrap: wrap;
 }
 .reviews-item-img {
   margin-bottom: 18px;
@@ -346,6 +353,7 @@ img {
 
 .reviews-item {
   border: 1px solid var(--black);
+  flex-basis: calc((100% - 56px) / 3);
 }
 .reviews-card-title {
   margin-bottom: 24px;
