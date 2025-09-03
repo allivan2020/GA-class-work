@@ -116,7 +116,6 @@ img {
   padding-top: 380px;
   padding-bottom: 40px;
   margin-bottom: 72px;
-  background-image: url(../images/Glass-min.png);
 
   background-color: var(--violet);
 }
@@ -188,10 +187,12 @@ img {
 }
 .advantages-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between;
+   */
+  gap: 70px;
 }
 .advantages-item {
-  max-width: 308px;
+  width: calc((100% - 140px) / 3);
 }
 .advantages-title {
   margin-bottom: 18px;
@@ -248,6 +249,7 @@ img {
   padding: 32px;
   padding-bottom: 28px;
   padding-top: 28px;
+  flex-basis: calc((100% - 3 * 19px) / 4);
 
   font-weight: 600;
   font-size: 14px;
