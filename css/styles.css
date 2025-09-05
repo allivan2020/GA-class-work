@@ -33,7 +33,10 @@
 .btn {
   min-width: 146px;
   cursor: pointer;
-  display: inline-block;
+  /* display: inline-flex; */
+  display: inline-flex; /* вместо inline-block */
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border-radius: 100px;
   border: 1px solid transparent;
@@ -118,8 +121,10 @@ img {
 /* --------------hero-------------------- */
 
 .hero {
+  height: 600px;
   padding-top: 380px;
   padding-bottom: 40px;
+  border-radius: 30px;
   margin-bottom: 72px;
 
   background-image: linear-gradient(
@@ -132,6 +137,11 @@ img {
   background-size: cover;
 
   background-color: var(--violet);
+}
+.hero .container {
+  width: 1186px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .hero-title {
   max-width: 484px;
@@ -151,7 +161,7 @@ img {
 .hero .btn {
   padding: 14px 40px;
   margin-bottom: 0;
-  margin-right: 20px;
+  margin-right: 14px;
 
   font-weight: 600;
   font-size: 14px;
@@ -189,6 +199,7 @@ img {
   letter-spacing: -0.03em;
   color: var(--white);
 }
+
 /* --------------ADVANTEGES-------------------- */
 .advantages {
   padding-bottom: 51px;
