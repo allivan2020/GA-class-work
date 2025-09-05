@@ -42,7 +42,7 @@
   border: 1px solid transparent;
 }
 
-body {
+.body {
   font-family: "Montserrat", sans-serif;
   color: var(--black);
 }
@@ -108,14 +108,11 @@ img {
   line-height: 1.14;
   letter-spacing: -0.02em;
   color: var(--black);
+  cursor: pointer;
 }
 .header-item:hover,
 .header-item:focus {
-  /* color: var(--orange); */
-
-  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2.8px 2.2px red, 0 6.7px 5.3px blue, 0 12.5px 10px green,
-    0 22.3px 17.9px purple, 0 41.8px 33.4px orange, 0 100px 80px teal;
+  color: var(--orange);
 }
 
 /* --------------hero-------------------- */
@@ -356,7 +353,8 @@ img {
   text-align: center;
 }
 .reviews-title {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  margin-bottom: 91px;
 
   font-weight: 600;
   font-size: 24px;
@@ -382,6 +380,44 @@ img {
 .reviews-item {
   border: 1px solid var(--black);
   flex-basis: calc((100% - 56px) / 3);
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 24px;
+}
+.first-client:before {
+  content: "";
+  display: block;
+  background-image: url(../images/Ellipse.jpg);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -70px;
+}
+
+.second-client:before {
+  content: "";
+  display: block;
+  background-image: url(../images/Ellipse2.jpg);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -70px;
+}
+.third-client:before {
+  content: "";
+  display: block;
+  background-image: url(../images/Ellipse3.jpg);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  top: -70px;
 }
 .reviews-card-title {
   margin-bottom: 24px;
