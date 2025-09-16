@@ -393,7 +393,7 @@
           <button type="button" class="modal-close">
             <svg class="modal-close-icon" width="28" height="28">
               <use
-                href="./images/symbol-defs-modal.svg#icon-x-close"
+                href="./images/symbol-defs.svg#icon-x-close"
                 class="svg-icon"
               ></use>
             </svg>
@@ -406,11 +406,59 @@
             <ul class="input-list">
               <li class="input-item">
                 <label for="user-name" class="input-label">Name</label>
-                <input type="text" name="user-name" class="input-border" />
+                <div class="input-icon">
+                  <input
+                    type="text"
+                    name="user-name"
+                    class="input-border"
+                    id="user-name"
+                    required
+                  />
+                  <svg class="input-svg" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-user"></use>
+                  </svg>
+                </div>
               </li>
-              <li></li>
-              <li></li>
+              <li class="input-item">
+                <label for="user-email" class="input-label">Email</label>
+                <div class="input-icon">
+                  <input
+                    type="email"
+                    name="user-email"
+                    class="input-border"
+                    id="user-email"
+                    required
+                  />
+                  <svg class="input-svg" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="input-item">
+                <label for="user-tel" class="input-label">Phone number</label>
+                <div class="input-icon">
+                  <input
+                    type="tel"
+                    name="user-tel"
+                    class="input-border"
+                    id="user-tel"
+                    required
+                  />
+                  <svg class="input-svg" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </li>
+              <div class="input-item">
+                <label for="textarea" class="input-label">Comment</label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  class="modal-textarea"
+                ></textarea>
+              </div>
             </ul>
+            <button type="submit" class="form-send btn">Send</button>
           </form>
         </div>
       </div>
