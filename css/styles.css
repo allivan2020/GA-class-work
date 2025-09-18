@@ -507,7 +507,7 @@ img {
   border-radius: 15px;
   padding: 24px;
   position: relative;
-  padding-top: 56px`;
+  padding-top: 56px;
 }
 .reviews-icon {
   position: absolute;
@@ -781,7 +781,7 @@ img {
   border: 1px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
   padding: 22px 24px;
-  color: Ogreen;
+  color: rgba(64, 64, 64, 0.3);
   font-size: 14px;
   outline: transparent;
   transition: 0.3s border-color linear;
@@ -820,7 +820,7 @@ img {
   transition: background-color 250ms ease-in-out, border-color 250ms ease-in-out,
     fill 250ms ease-in-out;
 }
-` .checkbox-label-link {
+.checkbox-label-link {
   color: var(--orange);
   text-decoration: underline;
 }
